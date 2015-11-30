@@ -4,6 +4,7 @@ feature 'Simple test' do
 
   scenario 'simple test' do
     visit '/'
+    puts Capybara.current_driver.to_s
     expect(page).to have_css('.sing-up')
   end
 
