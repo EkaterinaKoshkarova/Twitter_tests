@@ -22,3 +22,27 @@ Processing by StaticPagesController#home as HTML
   Rendered layouts/_header.html.erb (1.8ms)
   Rendered layouts/_footer.html.erb (0.3ms)
 Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2015-11-30 17:49:35 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered static_pages/_unsigned_home.html.erb (2.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 324ms (Views: 196.2ms | ActiveRecord: 6.2ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-30 17:49:36 +0400
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-30 17:49:36 +0400
+Started GET "/" for 127.0.0.1 at 2015-11-30 17:49:36 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/_unsigned_home.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 1.4ms)
