@@ -1,0 +1,10 @@
+<li>
+  <%= gravatar_for user %>
+  <%= user.name %>
+  <%= link_to '| View profile', user %>
+ <% if current_user.admin? && !current_user?(user) %>
+      <%= link_to '| Edit profile', edit_user_path(user) %>
+      <%= link_to '| Delete', user, method: :delete,
+                    data: { confirm: 'You sure?' } %>
+  <% end %>
+</li>

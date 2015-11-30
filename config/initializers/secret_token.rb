@@ -1,0 +1,1 @@
+Twitter::Application.config.secret_key_base = 'a52a47848af0735e99ca3edb2e7f1b8b1f22df6707c81e72e00afd054845d13b3aa0fbc86f811f88f9aef5733dbe721c0e89619353e3ab365b859513fb4a3904'
